@@ -27,4 +27,8 @@ public interface IPersistenciaTiquetes
      */
     public void salvarTiquetes( String archivo, Aerolinea aerolinea ) throws IOException;
 
+	void salvarAerolinea(String archivo, Aerolinea aerolinea);
+
+	void cargarAerolinea(String archivo, Aerolinea aerolinea);
+
 }

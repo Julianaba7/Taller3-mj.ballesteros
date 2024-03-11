@@ -216,4 +216,10 @@ public class PersistenciaTiquetesJson implements IPersistenciaTiquetes
         jobject.put( "tiquetes", jTiquetes );
     }
 
+	@Override
+	public void salvarAerolinea(String archivo, Aerolinea aerolinea) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
