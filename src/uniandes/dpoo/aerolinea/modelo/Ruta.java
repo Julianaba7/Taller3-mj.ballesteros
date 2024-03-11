@@ -7,8 +7,8 @@ public class Ruta
 {
     // TODO completar
 
-	private String horaSalida;
-	private String horaLlegada;
+	private static String horaSalida;
+	private static String horaLlegada;
 	private String codigoRuta;
 	private Aeropuerto destino;
 	private Aeropuerto origen;
@@ -73,7 +73,15 @@ public class Ruta
 	}
 	
 	public static int getDuracion() {
-		return -1;
+		int horasSalida = getHoras(horaSalida);
+	    int minutosSalida = getMinutos(horaSalida);
+
+	    int horasLlegada = getHoras(horaLlegada);
+	    int minutosLlegada = getMinutos(horaLlegada);
+
+	    int totalMin = (horasLlegada * 60 + minutosLlegada) - (horasSalida * 60 + minutosSalida);
+	    return totalMin;
+		
 	}
 
 	/**

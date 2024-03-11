@@ -38,7 +38,8 @@ public class ClienteCorporativo extends Cliente
 	}
 
 	public String getTipoCliente() {
-		return null;
+		
+		return CORPORATIVO;
 	}
 	
 	public String getIdentificador() {

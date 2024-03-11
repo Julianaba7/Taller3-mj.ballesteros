@@ -8,19 +8,11 @@ public abstract class CalculadoraTarifas {
 
 	public static final double IMPUESTO = 0.28;
 	
-	public int calcularTarifa(Vuelo vuelo, Cliente cliente) {
-		return -1;
-	}
-	protected int calcularCostoBase(Vuelo vuelo, Cliente cliente) {
-		return -1;
-	}
-	protected double calcularPorcentajeDescuento(Cliente cliente) {
-		return -1;
-	}
-	protected int calcularDistanciaVuelo(Ruta ruta) {
-		return -1;
-	}
-	protected int calcularValorImpuestos(int costoBase) {
-		return -1;
-	}
+	public abstract int calcularTarifa(Vuelo vuelo, Cliente cliente);
+	
+	protected abstract int calcularCostoBase(Vuelo vuelo, Cliente cliente);	
+	protected abstract double calcularPorcentajeDescuento(Cliente cliente) ;
+	
+	protected abstract int calcularDistanciaVuelo(Ruta ruta);
+	protected abstract int calcularValorImpuestos(int costoBase);
 }

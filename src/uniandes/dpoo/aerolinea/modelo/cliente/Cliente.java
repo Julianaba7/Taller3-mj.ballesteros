@@ -50,7 +50,13 @@ public abstract class Cliente {
 		
 	}
 	public int calcularValorTotalTiquetes() {
-		return -1;
+		
+		int total= 0;
+		for (Tiquete tiquete: tiquetesSinUsar) {
+			total += tiquete.getTarifa();
+		}
+		return total;
+		
 	}
 	public void usarTiquetes(Vuelo vuelo) {
 		

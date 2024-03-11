@@ -22,7 +22,7 @@ public class ClienteNatural extends Cliente {
 		return null;
 	}
 	public String getTipoCliente() {
-		return null;
+		return NATURAL;
 	}
 	
 	
